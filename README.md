@@ -44,7 +44,7 @@ This is a simple and modern recreation of the classic Pong arcade game, built us
 
 ## Installation and Running
 
-1. Install the required dependency:
+1. Install the required dependency in terminal (may have to run in administrator)
 
    ```bash
    pip install pygame
