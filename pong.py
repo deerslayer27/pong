@@ -1,7 +1,7 @@
 import pygame
 import random
 
-# Initialize Pygame
+# Pygame
 pygame.init()
 
 # Constants
@@ -31,7 +31,7 @@ paddle2_vel = 0
 score1 = 0
 score2 = 0
 
-# Helper function to reset ball position and velocity
+#function to reset ball position and velocity
 def ball_init(right):
     global ball_pos, ball_vel
     ball_pos = [WIDTH // 2, HEIGHT // 2]
@@ -46,7 +46,7 @@ def ball_init(right):
     ball_vel[0] *= 1.5
     ball_vel[1] *= 1.5
     
-    # Add delay of 2 seconds before the ball starts moving
+    # Add delay of 2 seconds before ball starts moving
     pygame.time.delay(2000)  # 2000 milliseconds = 2 seconds
 
 # Key handlers
@@ -71,7 +71,7 @@ def keyup(event):
     elif event.key in (pygame.K_UP, pygame.K_DOWN):
         paddle2_vel = 0
 
-# Main game loop
+# game loop
 running = True
 clock = pygame.time.Clock()
 
